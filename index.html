@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yummy Omar</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/output.css" />
+  <link rel="shortcut icon" href="imge/logo (1).png" type="image/x-icon">
+</head>
+
+<body class="bg-black bg-opacity-95">
+  <!--  spinner -->
+  <section id="loading" class="loading-screen bg-black fixed top-0 right-0 bottom-0 left-0 z-40">
+    <div class="sk-chase">
+      <div class="sk-chase-dot"></div>
+      <div class="sk-chase-dot"></div>
+      <div class="sk-chase-dot"></div>
+      <div class="sk-chase-dot"></div>
+      <div class="sk-chase-dot"></div>
+      <div class="sk-chase-dot"></div>
+    </div>
+  </section>
+  <!-- side-menu -->
+  <section class="">
+    <div id="side-menu" class="side-menu fixed z-50 top-0 flex">
+      <!-- first -->
+      <div id="linkes" class="nav-tap flex flex-col justify-between p-8 h-screen w-3/4 bg-black bg-opacity-95">
+        <!-- links -->
+        <div class="links relative overflow-hidden">
+          <ul class="list-none overflow-hidden">
+            <li class="cild-1 cursor-pointer text-lg relative top-full text-white py-2 hover:text-slate-500"
+              id="searchName" onclick="displaySerch()">
+              Search
+            </li>
+            <li class="cild-2 cursor-pointer text-lg relative top-full text-white py-2 hover:text-slate-500"
+              onclick="getcategories()">
+              Categories
+            </li>
+            <li class="cild-3 cursor-pointer text-lg relative top-full text-white py-2 hover:text-slate-500"
+              onclick="getAreaa()">
+              Area
+            </li>
+            <li class="cild-4 cursor-pointer text-lg relative top-full text-white py-2 hover:text-slate-500"
+              onclick="getIngredients()">
+              Ingredients
+            </li>
+            <li class="cild-5 cursor-pointer text-lg relative text-white py-2 hover:text-slate-500"
+              onclick=" displayContacts()">
+              Contact Us
+            </li>
+          </ul>
+        </div>
+        <!-- icon -->
+        <div>
+          <div class="icon text-white">
+            <i class="fa-brands fa-facebook cursor-pointer text-lg pe-1 hover:text-slate-500"></i>
+            <i class="fa-brands fa-twitter cursor-pointer text-lg pe-1 hover:text-slate-500"></i>
+            <i class="fa-solid fa-globe cursor-pointer text-lg pe-1 hover:text-slate-500"></i>
+          </div>
+          <!-- fotter -->
+          <div class="fotter">
+            <p class="text-white pt-3 text-lg">
+              Copyright Â© 2019 All Rights
+              <br />
+              Reserved.
+              <br />
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- second -->
+      <div class="flex flex-col bg-white py-7  w-1/4 text-black items-center justify-between">
+        <img src="imge/logo.png" width="50px" alt="" />
+        <i id="openBtn" class="fa-solid open-close-icon fa-2x fa-align-justify cursor-pointer"></i>
+
+        <div class="flex flex-col py-2">
+          <i class="fa-solid fa-globe d-block cursor-pointer"></i>
+          <i class="fa-solid fa-share-nodes mt-2 cursor-pointer"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="putSerch" class="px-10  mt-4  z-50">
+
+
+    <div id="rowData" class="itemSearch flex flex-row flex-wrap justify-start mx-auto ps-10 py-8">
+
+
+
+  </section>
+
+
+
+
+  <section id="putSerch" class="container flex my-8  z-0 mx-auto ps-7 py-5">
+    <div id="rowData" class="itemSearch flex flex-row flex-wrap justify-start mx-auto ps-4 py-8">
+    </div>
+  </section>
+
+
+
+  
+
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="./js/test.js"></script>
+</body>
+
+</html>
